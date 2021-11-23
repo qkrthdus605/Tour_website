@@ -1,10 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import MainPage from './pages/MainPage';
 
-function App() {
+const App = () => {
   return (
-    <h2>Tour Website</h2>
+    <MainPage />
   );
-}
+};
 
 export default App;

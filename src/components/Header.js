@@ -2,6 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+
 const categories = [
   {
     name: 'tour',
@@ -34,7 +35,7 @@ const CategoriesBlock = styled.div`
   padding: 1px;
   width: 100%;
   margin: 0 auto;
-  border-bottom: 2px solid rgba(255, 153, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   @media screen and (max-width: 768px){
     width: 100%;
     overflow-x: auto;
@@ -47,17 +48,17 @@ const Category = styled(NavLink)`
   cursor: pointer;
   white-space: pre;
   text-decoration: none;
-  color: inherit;
+  color: white;
   padding-bottom: 0.25rem;
   margin: 30px;
   &:hover{
-    color: #FFA500;
+    color: rgba(255, 153, 0, 0.8);
   }
   &.active{
     font-weight: 600;
-    color: #FFA500;
+    color: rgba(255, 153, 0, 0.8);
     &:hover{
-      color: #FFA500;
+      color: rgba(255, 153, 0, 0.5);
     }
   }
   & + &{
